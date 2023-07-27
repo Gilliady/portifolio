@@ -5,6 +5,7 @@ import Logo from '../../public/next.svg';
 import ServicesCard from './ServicesCard';
 import AboutMe from './AboutMe';
 import Faq from './Faq';
+import '../stylesCSS/MainContent.css';
 const MainContent = (): JSX.Element => {
 	return (
 		<main className="pt-10 w-full">
@@ -31,20 +32,33 @@ const MainContent = (): JSX.Element => {
 				</div>
 				<div className="w-full flex relative items-center justify-center flex-col">
 					<p className=" w-full p-8">Services</p>
-					<h2 className="text-4xl relative w-full flex flex-wrap">
-						<p className="grow">
-							{"Simplicity is the"}
-						</p>
-						<p>
-							{" ultimate sophistication."}
-						</p>
-						{/* <section className="
-							w-[55%] h-[75%] absolute text-transparent
-							border-t-2 border-r-2 rounded-tr-full rounded-br-full animate-pulse border-black top-[20px] right-[-5px]"
-						>
-							{"_________________________________"}
-						</section> */}
-					</h2>
+					<div className="w-[105%] md:w-full min-h-[100px]">
+
+						<h2 className="text-xl md:text-4xl lg:text-5xl relative w-full flex flex-wrap">
+							<p className="absolute top-[-16px] left-[20px] bg-[#f2f4f4] z-10 md:left-[65px] lg:left-[90px] lg:top-[-25px]">
+								{"Simplicity is the"}
+							</p>
+							<p className='absolute bottom-[14px] right-[13px] bg-[#f2f4f4] z-0 md:right-[25px] md:bottom-[30px] lg:bottom-[45px] lg:right-[40px] lg:px-4'>
+								{" ultimate sophistication."}
+							</p>
+
+							<svg viewBox="0 0 763 104" fill="none" xmlns="http://www.w3.org/2000/svg" className="z-[-1]">
+								<path
+									d="M415 52H27C13.1929 52 2 63.1929 2 77V77C2 90.8071 13.1929 102 27 102H415"
+									stroke="#e3882c"
+								></path>
+								<path
+									d="M367.5 52L736 52C749.807 52 761 40.8071 761 27V27C761 13.1929 749.807 2.00003 736 2.00003L367.5 2.00003"
+									stroke="#e3882c"
+								></path>
+								<path className="path"
+									d="M415 102H27C13.1929 102 2 90.8071 2 77C2 63.1929 13.1929 52 27 52H415L736 52C749.807 52 761 40.8071 761 27C761 13.1929 749.807 2.00003 736 2.00003L367.5 2.00003"
+									stroke="white"
+									strokeWidth="1"
+								></path>
+							</svg>
+						</h2>
+					</div>
 					<div className="flex w-full justify-around h-[40vh] md:h-[60vh]">
 						<ServicesCard
 							title="Front-End"
@@ -65,7 +79,7 @@ const MainContent = (): JSX.Element => {
           <path d="M210.5 37H19C9.05888 37 1 45.0589 1 55V55C1 64.9411 9.05887 73 19 73H210.5" stroke="#863B32" vector-effect="non-scaling-stroke" ></path>
           <path d="M211.5 37L402 37C411.941 37 420 28.9411 420 19V19C420 9.05888 411.941 1.00001 402 1.00001L211.5 1.00001" stroke="#863B32" vector-effect="non-scaling-stroke" ></path>
           <path d="M210.5 73H19C9.05887 73 1 64.9411 1 55C1 45.0589 9.05888 37 19 37H211.5L402 37C411.941 37 420 28.9411 420 19C420 9.05888 411.941 1.00001 402 1.00001L211.5 1.00001" stroke="#E96A35" stroke-width="1" vector-effect="non-scaling-stroke"></path> */}
-        {/* </svg> */}
+					{/* </svg> */}
 				</div>
 			</section>
 		</main>
