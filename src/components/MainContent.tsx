@@ -32,13 +32,26 @@ const MainContent = (): JSX.Element => {
 				</div>
 				<div className="w-full flex relative items-center justify-center flex-col">
 					<p className=" w-full p-8">Services</p>
-					<div className="w-[105%] md:w-full min-h-[100px]">
+					<div className="w-[105%] md:w-full lg:w-[80%] min-h-[100px]">
 
 						<h2 className="text-xl md:text-4xl lg:text-5xl relative w-full flex flex-wrap">
-							<p className="absolute top-[-16px] left-[20px] bg-[#f2f4f4] z-10 md:left-[65px] lg:left-[90px] lg:top-[-25px]">
+							<p className="
+								absolute top-[-16px] left-[20px] bg-[#d6dcdc] z-10
+								md:left-[65px]
+								lg:pr-6 lg:left-[35px] lg:top-[-25px]
+								xl:left-[130px] xl:pr-12
+								2xl:left-[200px] 2xl:pr-20
+								min-[1920px]:left-[230px]
+							">
 								{"Simplicity is the"}
 							</p>
-							<p className='absolute bottom-[14px] right-[13px] bg-[#f2f4f4] z-0 md:right-[25px] md:bottom-[30px] lg:bottom-[45px] lg:right-[40px] lg:px-4'>
+							<p className='
+							absolute px-4 bottom-[14px] right-[13px] bg-[#d6dcdc] z-0 md:right-[25px]
+							md:bottom-[30px]
+							lg:bottom-[30px] lg:right-[30px] lg:px-6
+							xl:bottom-[50px] xl:px-12
+							2xl:bottom-[65px] 2xl:px-14
+							'>
 								{" ultimate sophistication."}
 							</p>
 
