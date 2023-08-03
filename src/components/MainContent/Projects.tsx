@@ -9,7 +9,6 @@ import { Transition } from '@headlessui/react';
 const Projects = () => {
   const { ref: show, inView: showProjects } = useInView({
     threshold: 0.1,
-    triggerOnce: true,
   });
   useEffect(() => {
     if (showProjects) {
@@ -18,8 +17,8 @@ const Projects = () => {
   }, [showProjects]);
 
   return (
-    <div className='h-[720px] w-full flex flex-col justify-around items-center'>
-      <div className={`transition-all duration-[800ms] border-2 border-slate-700 min-h-[200px] ${!showProjects ? 'w-[30%]' : 'w-[70%] translate-y-12'} rounded-xl relative px-4 py-12 flex flex-wrap justify-around`}>
+    <div className='h-[920px] w-full flex flex-col justify-around items-center'>
+      <div className={`transition-all duration-[800ms] border-2 border-slate-700 min-h-[500px] ${!showProjects ? 'w-[50%]' : 'w-[70%] translate-y-12'} rounded-xl relative px-4 py-12 flex flex-wrap justify-around`}>
         <Image
           src={Logo}
           width={100}
