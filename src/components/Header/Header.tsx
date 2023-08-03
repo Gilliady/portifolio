@@ -6,11 +6,6 @@ import Toggle from './Toggle';
 
 const Header = (): JSX.Element => {
 	const [isHidden, setIsHidden] = useState<boolean>(true);
-	const windowWidth = useRef<number>(window.innerWidth);
-	useEffect(() => {
-		windowWidth.current >= 1024 && setIsHidden(false);
-		console.log(windowWidth.current);
-	}, [windowWidth]);
 	return (
 		<header className='w-full'>
 			<nav className="w-full flex justify-evenly">
