@@ -1,35 +1,17 @@
 import Image from 'next/image';
-import ProjectCard from './ProjectCard';
-import TitlePresentation from './TitlePresentation';
-import Logo from '../../public/next.svg';
+import TitlePresentation from '../TitlePresentation';
+import Logo from '../../../public/next.svg';
 import ServicesCard from './ServicesCard';
 import AboutMe from './AboutMe';
 import Faq from './Faq';
-import '../stylesCSS/MainContent.css';
+import '../../styles/MainContent.css';
+import Projects from './Projects';
 const MainContent = (): JSX.Element => {
 	return (
 		<main className="pt-10 w-full">
 			<TitlePresentation />
-			<section className="container mx-auto py-12">
-				<div className="border-2 border-slate-300 rounded-xl relative px-4 py-12 flex flex-wrap justify-around">
-					<Image
-						src={Logo}
-						width={100}
-						height={100}
-						alt="logo"
-						className="absolute top-[25px] left-[25px]"
-					/>
-					<div
-						className="w-full	flex flex-wrap p-4 justify-between items-center md:flex-nowrap"
-					>
-						<ProjectCard projectName='Projeto A' />
-						<ProjectCard projectName='Projeto B' />
-						<ProjectCard projectName='Projeto C	' />
-					</div>
-					<div className="flex items-center justify-center">
-						<ProjectCard projectName='Projeto D' grow="grow-[0.1]" />
-					</div>
-				</div>
+			<section className="container mx-auto py-12 flex flex-col items-center">
+				<Projects />
 				<div className="w-full flex relative items-center justify-center flex-col">
 					<p className=" w-full p-8">Services</p>
 					<div className="w-[105%] md:w-full lg:w-[80%] min-h-[100px]">

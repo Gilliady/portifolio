@@ -4,12 +4,11 @@ import { Disclosure } from '@headlessui/react';
 interface FaqCardProps {
 	title: string;
 	text: string;
-	order: string;
 };
-const FaqCard = ({title, text, order}: FaqCardProps) => {
+const FaqCard = ({title, text }: FaqCardProps) => {
 	return (
-		<div className={`w-full border rounded-md my-2 relative ${order}`}>
-			<Disclosure>
+		<div className={`w-full border rounded-md my-2 relative`}>
+			<Disclosure >
 				{({ open }) => (
 					<>
 						<Disclosure.Button className="flex w-full justify-between rounded-lg 

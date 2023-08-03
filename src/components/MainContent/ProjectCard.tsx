@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import imagemPlaceholder from '../../public/imagemPlaceholder.png';
+import imagemPlaceholder from '../../../public/imagemPlaceholder.png';
 interface ProjectCardProps {
 	projectName: string;
 	grow?: string;

@@ -1,6 +1,5 @@
-import Header from '@/components/Header'
-import MainContent from '@/components/MainContent'
-import Image from 'next/image'
+import Header from '@/components/Header/Header';
+import MainContent from '@/components/MainContent/MainContent';
 
 export default function Home(): JSX.Element {
   return (
